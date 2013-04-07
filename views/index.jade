@@ -1,15 +1,24 @@
 extends layout
  
 block body
-  div
-    h2 My Blog
-    ul
+
+  .navbar
+      .navbar-inner
+        .container
+          .brand My Blog
+
+    .container
+      ul
       li
         a(href='/') Home
       li
         a(href='/addPost') Add a new post
         
-    div(ng-view)
+      div(ng-view)
+
+  div.footer
+    p &copy 2013 All rights reserved.  
+    
     
   script(src='js/lib/angular/angular.js')
   script(src='js/app.js')
